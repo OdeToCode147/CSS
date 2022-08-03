@@ -1,0 +1,67 @@
+html, body{
+    background-color: #666666;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    /* background-image: url(./ssmain.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+img{
+    filter: brightness(40%);
+    width: 99.5vw;
+    height: 96.3vh;
+    z-index: 0;
+    position: relative;
+    top: 1px;
+    left: 1px;
+    
+}
+/* iframe{
+    filter: brightness(20%);
+    width: 99.5vw;
+    height: 97.2vh;
+    position: relative;
+    bottom: 8px;
+    right: 8px;
+} */
+.PopUp{
+    background-color: white;
+    border-radius: 10px;
+    width: 500px;
+    height: 250px;
+    position:fixed;
+    top: 37.5vh;
+    right: 36.15vw;
+}
+.Heading{
+    padding: 5px 0px 0px 20px;
+    font-size: 20px;
+}
+a{
+    margin: 5px 0px 0px 20px;
+    padding: 5px 0px 0px 300px;
+}
+a:visited, a:hover, a:active{
+    color: inherit;
+}
+input:before, input::after{
+    color: inherit;
+}
+input{
+    margin: 5px 0px 0px 20px;
+    font-size: 16px;
+    width: 420px;
+    background-color: #F7F7F7;
+    border: #EDEDED solid 1px;
+}
+button{
+    padding: 10px;
+    margin: 0px 0px 0px 270px;
+    font-size: 20px;
+    background-color: #00A5EC;
+    color: white;
+    border: #00A5EC solid 1px;
+    border-radius: 5px;
+    width: 200px;
+}

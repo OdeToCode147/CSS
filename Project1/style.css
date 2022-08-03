@@ -1,0 +1,70 @@
+html, body{
+    margin: 0px;
+    background-color: #F7F7F7;;
+}
+.Checkbox{
+    color: #00A5EC;
+}
+.Icon{
+    display: block;
+    margin: 0px 20px;
+    background-color: #F7F7F7;
+    position:absolute;
+    right: 270px;
+    top: 120px
+}
+
+.NewTask{
+    position: relative;
+    bottom: 3px;
+}
+.Heading{
+    text-align: center;
+    color: #00A5EC;
+    font-family: 'Times New Roman', Times, 'Times New Roman', Times, serif;
+}
+a:visited{
+    color: inherit;
+}
+.Flex-Container{
+    display: flex;
+    padding: 80px 0px 0px 80px;
+    background-color: #F7F7F7;
+    flex-flow: row wrap;
+    width: 94vw;
+    /* width: 115vh; */
+    justify-content: flex-start;
+}
+.Flex-Item{
+    height: 223px;
+    width: 360px;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #EDEDED;
+    background-color: white;
+    border-radius: 10px;
+    margin: 16px;
+    /* padding: 0px 32px 100px; */
+}
+input{
+    cursor: pointer;
+}
+label{
+    cursor: pointer;
+}
+.Tasks{
+    color: #424242;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    margin: 23px 0px 0px 137px;
+    position: relative;
+    top: 10px;
+}
+.Lists{
+    color: #00A5EC;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+    top: 10px;
+
+}

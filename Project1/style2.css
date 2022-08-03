@@ -1,0 +1,75 @@
+html, body{
+    background-color: #d7d7d7;;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+/* .Header{
+    padding: 2px;
+    background-color: white
+} */
+.Tasks{
+    color: #424242;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    margin: 23px 0px 0px 137px;
+    position: relative;
+    top: 10px;
+}
+.Lists{
+    color: #00A5EC;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+    top: 10px;
+
+}
+.PopUp{
+    background-color: white;
+    height: 290px;
+    width: 400px;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    margin: 16px;
+    position:fixed;
+    top: 37.5vh;
+    right: 36.15vw;
+    cursor: pointer; 
+}
+a{
+    margin: 5px 0px 0px 20px;
+}
+a:visited, a:hover, a:active{
+    color: inherit;
+}
+input:before, input::after{
+    color: inherit;
+}
+.Heading{
+    text-align: center;
+    color: #00A5EC;
+    font-family: 'Times New Roman', Times, 'Times New Roman', Times, serif;
+}
+.Icon{
+    display: block;
+    margin: 0px 20px;
+    position:absolute;
+    right: 560px;
+    top: 220px
+}
+.Icon1{
+    display: block;
+    margin: 0px 20px;
+    position:absolute;
+    right: 870px;
+    top: 220px
+}
+.NewTask{
+    position: relative;
+    bottom: 3px;
+}
+.back{
+    font-size: 22px;
+    position: relative;
+    bottom: 3px;
+}
