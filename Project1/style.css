@@ -68,3 +68,6 @@ label{
     top: 10px;
 
 }
+input:before, input::after{
+    color: inherit;
+}
