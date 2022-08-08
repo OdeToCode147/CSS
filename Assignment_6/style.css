@@ -1,0 +1,135 @@
+html, body{
+    background-image: url(./Bg_Potrait.jpg);
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+a:before, a:after, a:visited, a:link{
+    color: black;
+}
+.header-container{
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px 40px;
+    margin: 0 0 0 25px;
+    flex-flow: wrap row;
+}
+.logo{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.header-items{
+    padding: 0 40px;
+}
+/* .content-container{
+    display: flex;
+    padding: 0px 40px 0px 0px;
+    margin: 0px;
+    flex-flow: wrap row;
+    justify-content: flex-end;
+    align-items:flex-start;
+} */
+.content-container{
+    display: grid;
+    padding: 0px 40px 0px 0px;
+    margin: 0px;
+    grid-template-columns: auto auto auto;
+}
+.content-items{
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.image-size{
+    width: 8rem;
+    height: 10rem;
+    overflow: hidden;
+}
+.image-size:hover{
+   position: relative;
+   bottom: 1rem;
+   width: 8.5rem;
+   height: 10.5rem;
+}
+.aling-full{
+    border: none;
+    align-self:center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+.box1{
+    background-image: url(./1.jpeg);
+    background-size: cover;
+}
+.box2{
+    background-image: url(./2.jpg);
+    background-size: cover;
+}
+.box3{
+    background-image: url(./3.jpg);
+    background-size: cover;
+}
+.box4{
+    background-image: url(./4.jpg);
+    background-size: cover;
+}
+h1{
+    font-size: 64px;
+    margin: auto auto 0px;
+}
+button{
+    margin: 20px auto auto;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 50px;
+}
+h3{
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-size: 18px
+}
+
+@media screen and (max-width: 1000px) {
+    .content-container{
+    display: flex;
+    padding: 0px 40px 0px 0px;
+    margin: 0px;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items:flex-start;
+    }
+    .image-size{
+        width: 16rem;
+        height: 9rem;
+        overflow: hidden;
+    }
+    .image-size:hover{
+        position: relative;
+        bottom: 1rem;
+        width: 16.5rem;
+        height: 9.5rem;
+     }
+    }
+    @media screen and (max-width: 850px) {
+        .content-container{
+        display: flex;
+        padding: 0px 40px 0px 0px;
+        margin: 0px;
+        flex-flow: wrap row;
+        justify-content: center;
+        align-items:flex-start;
+        }
+        .image-size{
+            width: 30rem;
+            height: 10rem;
+            overflow: hidden;
+        }
+        .image-size:hover{
+            position: relative;
+            bottom: 1rem;
+            width: 31rem;
+            height: 11rem;
+         }
+        }
