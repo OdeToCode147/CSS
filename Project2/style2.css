@@ -1,0 +1,152 @@
+html, body{
+    margin: 0px;
+    border: 0px;
+    background-color: #d7d7d7;
+    padding: 0px;
+}
+.header{
+    background-color: white;
+    padding-bottom: 1.5rem;
+}
+.Tasks{
+    color: #424242;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    margin: 1.5rem 0px 0px 8.5rem;
+    position: relative;
+    top: 10px;
+}
+.Lists{
+    color: #00A5EC;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+    top: 10px;
+
+}
+input{
+    cursor: pointer;
+}
+label{
+    cursor: pointer;
+}
+
+input:before, input::after{
+    color: inherit;
+}
+a{
+    margin: 5px 0px 0px 20px;
+    text-decoration: none;
+}
+a:visited, a:hover, a:active{
+    color: inherit;
+}
+input:before, input::after{
+    color: inherit;
+}
+.fa-circle-arrow-left{
+    font-size: 30px ;
+    color: #424242
+}
+.fa-circle-plus{
+    font-size: 30px ;
+    color: #00A5EC;
+}
+.Icon1{
+    font-size: 22px;
+    display: block;
+    margin: 0px 20px;
+    position:absolute;
+    right: 52rem;
+    top: 14rem;
+}
+.Icon{
+    display: block;
+    margin: 0px 20px;
+    position:absolute;
+    right: 32.4rem;
+    top: 14rem;
+}
+.back{
+    font-size: 22px;
+    position: relative;
+    bottom: 3px;
+}
+.NewTask{
+    font-size: 22px;
+    position: relative;
+    bottom: 3px;
+}
+.PopUp{
+    background-color: white;
+    height: 19rem;
+    width: 25rem;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    margin: 1rem;
+    position:fixed;
+    top: 37.5vh;
+    right: 33.7vw;
+    cursor: pointer; 
+}
+.Heading{
+    text-align: center;
+    color: #00A5EC;
+    font-family: 'Times New Roman', Times, 'Times New Roman', Times, serif;
+}
+@media (min-width : 700px) and (max-width : 770px) {
+    .Icon{
+        position:absolute;
+        right: 10rem;
+        top: 14rem;
+    }
+    .NewTask{
+        position: relative;
+        bottom: 3px;
+    }
+    .Icon1{
+        position:absolute;
+        right: 32rem;
+    }
+    .Tasks{
+        position: relative;
+        left: 160px;
+    }
+    .Lists{
+        position: relative;
+        left: 160px;
+    }
+    .PopUp{
+        top: 27.5vh;
+        right: 22.7vw;
+    }
+}
+@media (min-width : 300px) and (max-width : 500px) {
+    .Icon{
+        position:absolute;
+        right: 6rem;
+        top: 8rem;
+    }
+    .NewTask{
+        display:none;
+    }
+    .Icon1{
+        position:absolute;
+        right: 12rem;
+        top: 8rem;
+    }
+    .Tasks{
+        position: relative;
+        right: 30px;
+    }
+    .Lists{
+        position: relative;
+        right: 30px;
+    }
+    .PopUp{
+        top: 27.5vh;
+        right: 7vw;
+        height: 20rem;
+        width: 18rem;
+    }
+}

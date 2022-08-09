@@ -1,0 +1,94 @@
+html, body{
+    background-color: #666666;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+iframe{
+    filter: brightness(20%);
+    width: 99.5vw;
+    height: 97.2vh;
+    position: relative;
+    bottom: 8px;
+    right: 8px;
+}
+.PopUp{
+    background-color: white;
+    border-radius: 10px;
+    width: 500px;
+    height: 250px;
+    position:fixed;
+    top: 37.5vh;
+    right: 36.15vw;
+}
+.Heading{
+    padding: 5px 0px 0px 20px;
+    font-size: 20px;
+}
+a{
+    margin: 5px 0px 0px 20px;
+    padding: 5px 0px 0px 300px;
+}
+a:visited, a:hover, a:active{
+    color: inherit;
+}
+input:before, input::after{
+    color: inherit;
+}
+input{
+    margin: 5px 0px 0px 20px;
+    font-size: 16px;
+    width: 420px;
+    background-color: #F7F7F7;
+    border: #EDEDED solid 1px;
+}
+button{
+    padding: 10px;
+    margin: 0px 0px 0px 270px;
+    font-size: 20px;
+    background-color: #00A5EC;
+    color: white;
+    border: #00A5EC solid 1px;
+    border-radius: 5px;
+    width: 200px;
+}
+@media (min-width : 700px) and (max-width : 770px) {
+    .PopUp{
+        width: 25rem;
+        height: 15rem;
+        position:fixed;
+        top: 27.5vh;
+        right: 26.15vw;
+    }
+    button{
+        margin: 0px 0px 0px 210px;
+        font-size: 20px;
+        width: 150px;
+    }
+    input{
+        width: 333px;
+    }
+    a{
+        margin: -70px;
+    }
+}
+@media (min-width : 300px) and (max-width : 500px){
+    .PopUp{
+        width: 20rem;
+        height: 15rem;
+        position:fixed;
+        top: 27.5vh;
+        right: 7.5vw;
+    }
+    button{
+        margin: 0px 0px 0px 145px;
+        font-size: 20px;
+        width: 150px;
+    }
+    input{
+        width: 265px;
+    }
+    a{
+        margin: -140px;
+    }
+}

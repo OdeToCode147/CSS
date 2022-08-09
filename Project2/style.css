@@ -1,0 +1,149 @@
+html, body{
+    margin: 0px;
+    border: 0px;
+    background-color: #F7F7F7;;
+}
+.header{
+    background-color: white;
+    padding-bottom: 1.5rem;
+}
+.Checkbox{
+    color: #00A5EC;
+}
+.Icon{
+    display: block;
+    margin: 0px 1rem;
+    background-color: #F7F7F7;
+    position:absolute;
+    right: 18rem;
+    top: 7.5rem;
+}
+.NewTask{
+    display: inline-block;
+    width: 8.25rem;
+    position: relative;
+    bottom: 0.2rem;
+}
+.Heading{
+    text-align: center;
+    color: #00A5EC;
+    font-family: 'Times New Roman', Times, 'Times New Roman', Times, serif;
+}
+a:visited{
+    color: inherit;
+}
+.Flex-Container{
+    display: flex;
+    padding: 5rem 0px 0px 5rem;
+    background-color: #F7F7F7;
+    flex-flow: row wrap;
+    width: 94vw;
+    /* width: 115vh; */
+    justify-content:flex-start;
+}
+.Flex-Item{
+    height: 14rem;
+    width: 23rem;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #EDEDED;
+    background-color: white;
+    border-radius: 10px;
+    margin: 1rem;
+    /* padding: 0px 32px 100px; */
+}
+input{
+    cursor: pointer;
+}
+label{
+    cursor: pointer;
+}
+.Tasks{
+    color: #424242;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    margin: 1.5rem 0px 0px 8.5rem;
+    position: relative;
+    top: 10px;
+}
+.Lists{
+    color: #00A5EC;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+    top: 10px;
+
+}
+input:before, input::after{
+    color: inherit;
+}
+@media (min-width : 700px) and (max-width : 770px) {
+    /* for iPad */
+    .Icon{
+        position: absolute;
+        left: calc(((95vw - 167px)/2))
+    }
+    .NewTask{
+        position: relative;
+        bottom: 30px;
+        left: 35px;
+    }
+    .Flex-Container{
+        display: flex;
+        align-items: center;
+        padding: 5rem 0px 0px 5rem;
+        background-color: #F7F7F7;
+        flex-flow: column wrap;
+        width: 100vw;
+    }
+    .Flex-Item{
+        height: 16rem;
+        width: 24rem;
+        cursor: pointer;
+        position: relative;
+        border: 1px solid #EDEDED;
+        background-color: white;
+        border-radius: 10px;
+        margin: 1rem 12rem 1rem 1rem;
+        padding: 0px 32px 100px;
+    }
+}
+@media (min-width : 300px) and (max-width : 500px) {
+    /* for iPhone SE*/
+    .Tasks{
+        position: relative;
+        right: 2rem;
+    }
+    .Lists{
+        position: relative;
+        right: 2rem;
+    }
+    .Flex-Container{
+        display: flex;
+        align-items: center;
+        padding: 5rem 0px 0px 5rem;
+        background-color: #F7F7F7;
+        flex-flow: column wrap;
+        width: 60vw;
+    }
+    .Flex-Item{
+        height: 8rem;
+        width: 12rem;
+        cursor: pointer;
+        position: relative;
+        right: 45px;
+        border: 1px solid #EDEDED;
+        background-color: white;
+        border-radius: 10px;
+        margin: 1rem 40rem 1rem 1rem;
+        padding: 0px 40px 100px;
+    }
+    .Icon{
+        position: absolute;
+        left: calc(((120vw - 120px)/2));
+        font-size: x-large !important;
+    }
+    .NewTask{
+        display: none;
+    }
+}
