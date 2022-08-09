@@ -90,6 +90,12 @@ h3{
     text-shadow: 2px 2px 4px black;
     font-size: 18px
 }
+.pseudo{
+    /* display: none; */
+    position: absolute;
+    top: 48.2px;
+    right:87.2px;
+}
 
 @media screen and (max-width: 1000px) {
     .content-container{
@@ -132,4 +138,13 @@ h3{
             width: 31rem;
             height: 11rem;
          }
+        }
+        @media screen and (max-width: 620px) {
+            .header-container{
+                visibility: hidden;
+            }
+
+            .pseudo{
+                visibility:visible;
+            }
         }
