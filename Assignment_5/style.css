@@ -1,0 +1,109 @@
+html , body{
+    background-color: rgb(255, 255, 94);
+}
+div{
+    margin: 10px 0;
+}
+.number{
+    display: inline-block;
+    margin: 10px;
+}
+.first{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: rgb(100, 175, 250);
+    animation: One 2s alternate infinite linear;
+}
+.second{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: rgb(255, 19, 255);
+    animation: Two 2s alternate infinite linear;
+}
+.third{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #075767;
+    animation: Three 2s infinite;
+}
+.fourth-one{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px;
+    background-color: tomato;
+    animation: Four 2s infinite alternate;
+}
+.fourth-two{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px;
+    background-color: tomato;
+    animation: Five 2s infinite alternate;
+}
+.fourth-three{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px;
+    background-color: tomato;
+    animation: Six 2s infinite alternate;
+}
+@keyframes One {
+    0%{
+        transform: skewX(20deg);
+    }
+    100%{
+        transform: skewX(-20deg);
+    }
+}
+@keyframes Two {
+    0%{
+        transform: skewY(20deg);
+    }
+    100%{
+        transform: skewY(-20deg);
+    }
+}
+@keyframes Three {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes Four{
+    0%{
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform: rotateX(60deg);
+    }
+}
+@keyframes Five{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(80deg);
+    }
+}
+@keyframes Six{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(80deg);
+    }
+}
