@@ -1,57 +1,101 @@
-body
-{
-    width: 96vw;
-    height: 98vh;
-    background-image: url(./sky.jpg);
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: cover;
-    border-top: 10px solid white;
-    border-right: 10px solid green;
-    border-left: 10px solid orangered;
-    border-bottom: 10px solid lightblue;
-    z-index: -5;
-    
-}
-.Car{
+*{
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .container{
+     height: 100vh;
+     border: 10px solid white;
+     border-left: 10px solid orangered;
+     border-right: 10px solid green;
+     background-image: url(./sky.jpg);
+     background-size: cover;
+     position: relative;
+ }
+ .head{
+     text-align: center;
+     margin: 0;
+     font-size: 48px;
+ }
+ .head1{
+     background-color: orange;
+ }
+ .head2{
+     background-color: white;
+ }
+ .head3{
+     background-color:green;
+ }
+ .sun{
+     height: 100px;
+     width: 100px;
+     position: absolute;
+     right: 10%;
+     top: 15%;
+ }
+ .building{
+     position: absolute;
+     bottom: 28.8%;
+     height: 250px;
+     width: 1484px;
+     background-image: url(./city.png);
+     animation: marquee 30s infinite linear;
+ }
+ .road{
     position: absolute;
-    top: 36vh;
-    left: 40vw;
-    z-index: 5;
-}
-.Front-Wheel{
-    animation: Wheels 60ms infinite;
-    position: absolute;
-    top: 55.5vh;
-    left: 43.7vw;
-    z-index: 6;
-}
-.Rear-Wheel{
-    animation: Wheels 60ms infinite;
-    position: absolute;
-    top: 55.5vh;
-    left: 67.6vw;
-    z-index: 6;
-}
-/* .City{
-    position: absolute;
-    top: 144px;
-}
-.Road{
-    position: absolute;
-    bottom: 0px;
-}
-.Flag{
-    position: absolute;
-    top: -17.8vh;
-    left: 68vw;
-    z-index: 6;
-} */
-/* @keyframes Wheels{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(180deg);
-    }
-} */
+    bottom: 0;
+    height: 200px;
+    width: 1484px;
+   background-image: url(./road.jpg);
+   animation: marquee 30s infinite linear;
+ }
+ @keyframes marquee {
+     0% {
+       background-position: 0;
+     }
+   
+     100% {
+       background-position: -1190px;
+     }
+   }
+   .car{
+     position: relative;
+     top: 260px;
+     width: 200px;
+     left: 450px;
+     z-index: 9;
+   }
+   .flag{
+     position: absolute;
+     height: 100px;
+     width: 100px;
+     left: 300px;
+     top: 70px;
+   }
+   .car-body{
+    position: relative;
+    top: 70px;
+     width: 400px;
+   }
+   .wheel1{
+     width: 70px;
+     position: absolute;
+     top:162px;
+     left: 35px;
+     animation: rotate 1s infinite linear;
+   }
+   .wheel2{
+     width: 70px;
+     position: absolute;
+     top:162px;
+     left: 282px;
+     animation: rotate 1s infinite linear;
+   }
+ 
+   @keyframes rotate{
+     from{
+         transform: rotate(-180deg);
+     }
+     to{
+         transform: rotate(360deg);
+     }
+   }
