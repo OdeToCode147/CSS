@@ -1,0 +1,39 @@
+html{
+    background-color: black;
+}
+.header{
+    font-size:xx-large;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px aquamarine;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+.leaf{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: aquamarine;
+    border-radius: 0px 70px;
+    box-shadow: 5px 5px 5px white;
+
+}
+
+.leaf:hover{
+    transition-delay: 0.2s;
+    transform: rotate(360deg);
+    transition-duration: 1s;
+}
+@media only screen and (max-width : 800px) {
+    .container{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .leaf{
+        margin: 40px;
+    }
+    
+}
